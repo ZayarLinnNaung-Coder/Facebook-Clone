@@ -1,0 +1,111 @@
+@media only screen and (max-width: 1200px) {
+    .left-part{
+        display: none;
+        background-color: var(--primary-dark-color);
+        z-index: 300;
+        height: 95vh;
+        width: 100%;
+    }
+    header{
+        height: 5vh;
+    }
+    header .left{
+        width: 20%;
+    }
+    header .left #fb-logo{
+        height: 40px;
+    }
+    header .left .form-wrapper .search-icon{
+        margin: 0;
+    }
+    header .left .form-wrapper input{
+        display: none;
+    }
+    header .main{
+        width: 60%;
+    }
+    header .main .link-container .sub-link.menu-link{
+        display: flex;
+    }
+    header .main .link-container .sub-link .badge{
+        top: 5px;
+        right: 21px;
+    }
+    header .right{
+        width: 20%;
+    }
+    header .right .link-container .info{
+        display: none;
+    }
+    .main-part{
+        padding-top: 5vh;
+        min-height: 95vh;
+        justify-content: flex-start;
+    }
+    .main-part .data-container .next-myday{
+        top: 11%;
+        right: 28%;
+    }
+    .main-part .data-container .myday-wrapper-container .myday-wrapper{
+        min-width: 110px;
+    }
+    .main-part .data-container{
+        width: 70%;
+    }
+    .right-part{
+        width: 26%;
+        height: 95vh;
+    }
+}
+@media only screen and (max-width: 500px){
+    header{
+        display: none;
+    }
+    .mobile-nav-upper{
+        display: flex;
+    }
+    .mobile-nav{
+        display: flex;
+    }
+    .main-part{
+        padding-top: 12vh;
+        min-height: 100vh;
+    }
+    .main-part .post-uploader-container .upper input{
+        font-size: 14px;
+    }
+    .main-part .post-uploader-container .upper img{
+        width: 40px;
+        height: 40px;
+    }
+    .main-part .data-container{
+        width: 100%;
+    }
+    .main-part .data-container .next-myday{
+        display: none;
+    }
+    .main-part .data-container .myday-wrapper-container{
+        height: 200px;
+        padding: 10px 5px;
+    }
+    .main-part .data-container .myday-wrapper-container .myday-wrapper{
+        min-width: 95px;
+    }
+    .main-part .post-uploader-container{
+        width: 100%;
+        border-radius: 0;
+    }
+    .main-part .post-data-container .post{
+        width: 100%;
+        border-radius: 0;
+    }
+    .main-part .post-data-container .post .post-header .post-uploader-profile img{
+        width: 40px;
+        height: 40px;
+    }
+    .right-part{
+        display: none;
+    }
+}
+
+

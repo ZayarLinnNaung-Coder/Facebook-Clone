@@ -1,0 +1,89 @@
+.left-part{
+    width: 25%;
+    height: 92vh;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 15px;
+    overflow-y: auto;
+}
+.left-part::-webkit-scrollbar{
+    width: 10px;
+}
+/* Track */
+.left-part::-webkit-scrollbar-track {
+    /*background: #f1f1f1;*/
+}
+
+/* Handle */
+.left-part::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #5E5E5F;
+}
+
+/* Handle on hover */
+.left-part::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+.left-part hr{
+    border: 1px solid var(--graywhite-color);
+    margin-bottom: 5px;
+}
+.left-part .upper div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.left-part .upper div:hover{
+    background-color: var(--second-dark-color);
+}
+.left-part .upper div img{
+    width: 30px;
+    border-radius: 50%;
+}
+.left-part .upper div span{
+    font-size: var(--default-font-size);
+    color: var(--palewhite-color);
+    margin-left: 5px;
+}
+.left-part .upper div .more-icon, .left-part .upper div .less-icon{
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: var(--second-dark-color);
+    stroke: var(--white-color);
+}
+.left-part .upper .hide{
+    display: none;
+}
+
+.left-part .lower .ys{
+    color: var(--graywhite-color);
+    font-size: 17px;
+    padding: 5px;
+    display: inline-block;
+}
+
+.left-part .lower div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.left-part .lower div:hover{
+    background-color: var(--second-dark-color);
+}
+.left-part .lower div img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.left-part .lower div span{
+    font-size: var(--default-font-size);
+    color: var(--palewhite-color);
+    margin-left: 5px;
+}

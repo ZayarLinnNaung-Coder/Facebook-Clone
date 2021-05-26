@@ -1,0 +1,517 @@
+@import url('common.css');
+@import "left-part.css";
+@import "right-part.css";
+/**************************************/
+/* HEADER                             */
+/**************************************/
+header{
+    z-index: 200;
+    display: flex;
+    width: 100%;
+    height: 8vh;
+    background-color: var(--second-dark-color);
+    border-bottom: 2px solid #393A3B;
+    position: fixed;
+}
+header .left{
+    padding-left: 10px;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+header .left #fb-logo{
+    height: 75%;
+}
+header .left .form-wrapper{
+    display: flex;
+    align-items: center;
+    background-color: var(--tertiary-dark-color);
+    padding: 10px;
+    border: 0;
+    border-radius: 50px;
+    margin-left: 5px;
+}
+header .left .form-wrapper input{
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    color: var(--palewhite-color);
+    font-size: var(--default-font-size);
+    width: 185px;
+}
+header .left .form-wrapper .search-icon{
+    width: 20px !important;
+    height: 20px !important;
+    stroke: var(--graywhite-color);
+    margin-right: 5px;
+}
+header .main{
+    height: 100%;
+    width: 50%;
+}
+
+header .main .link-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /*background-color: dimgray;*/
+}
+header .main .link-container .sub-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2px;
+    width: 15%;
+    height: 90%;
+    position: relative;
+}
+header .main .link-container .sub-link.menu-link{
+    display: none;
+}
+header .main .link-container .active{
+    border-bottom: solid blue;
+}
+header .main .link-container .sub-link:not(.active):hover{
+    border-radius: 15px;
+    background-color: var(--tertiary-dark-color);
+}
+header .main .link-container .sub-link .link-icon{
+    width: 25px !important;
+    height: 25px !important;
+    stroke: var(--graywhite-color);
+}
+header .main .link-container .sub-link .badge{
+    position: absolute;
+    line-height: 20px;
+    border-radius: 20px;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    color: var(--palewhite-color);
+    background-color: orangered;
+    top: 0px;
+    right: 25px;
+    font-size: var(--small-font-size);
+}
+header .right{
+    width: 25%;
+    height: 100%;
+}
+header .right .link-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding-right: 5px;
+    align-items: center;
+    justify-content: flex-end;
+}
+header .right .link-container .info{
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+header .right .link-container .info img{
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+}
+header .right .link-container .info span{
+    color: var(--white-color);
+    margin-left: 5px;
+    font-size: var(--default-font-size);
+    font-weight: bold;
+}
+header .right .link-container .link{
+    display: flex;
+    background-color: var(--tertiary-dark-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3px;
+}
+header .right .link-container .link .link-icon{
+    width: 20px;
+    height: 20px;
+    stroke: var(--palewhite-color);
+}
+.mobile-nav-upper{
+    position: fixed;
+    width: 100%;
+    z-index: 400;
+    padding: 10px;
+    justify-content: space-between;
+    background-color: var(--primary-dark-color);
+    display: none;
+}
+.mobile-nav-upper div .logo{
+    width: 25px;
+    background-color: var(--tertiary-dark-color);
+    padding: 5px;
+    stroke: var(--graywhite-color);
+    border-radius: 50%;
+}
+.mobile-nav-upper img{
+    height: 20px;
+}
+.mobile-nav{
+    z-index: 300;
+    background-color: var(--primary-dark-color);
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid var(--graywhite-color);
+    display: none;
+    justify-content: space-between;
+    padding-top: 6vh;
+}
+.mobile-nav .active{
+    border-bottom: 2px solid var(--default-blue-color);
+}
+.mobile-nav .active .icon{
+    stroke: var(--default-blue-color) !important;
+}
+.mobile-nav .tab{
+    padding: 5px;
+    width: 16%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mobile-nav .tab .icon{
+    width: 25px;
+    height: 30px;
+    stroke: var(--graywhite-color);
+}
+.main-part{
+    width: 100%;
+    padding-top: 8vh;
+    min-height: 92vh;
+    /*background-color: red;*/
+    display: flex;
+    justify-content: center;
+}
+.main-part .data-container{
+    width: 50%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.main-part .data-container .next-myday{
+    width: 45px;
+    height: 45px;
+    border-radius: 45px;
+    padding: 10px;
+    background-color: var(--second-dark-color);
+    position: absolute;
+    z-index: 100;
+    stroke: var(--graywhite-color);
+    right: 25%;
+    top: 23%;
+}
+.main-part .data-container .myday-wrapper-container{
+    position: relative;
+    padding: 20px 5px;
+    width: 95%;
+    height: 230px;
+    display: flex;
+    overflow-x: auto;
+}
+.main-part .data-container .myday-wrapper-container::-webkit-scrollbar {    display: none;}
+.main-part .data-container .myday-wrapper-container .myday-wrapper{
+    background-color: var(--second-dark-color);
+    min-width: 120px;
+    height: 100%;
+    border-radius: var(--myday-border-radius);
+    margin-right: 10px;
+}
+.main-part .data-container .myday-wrapper-container .myday-wrapper.me{
+
+}
+.main-part .data-container .myday-wrapper-container .myday-wrapper.me .bg{
+    border-top-right-radius: var(--myday-border-radius);
+    border-top-left-radius: var(--myday-border-radius);
+    width: 100%;
+    height: 75%;
+    background-image: url("https://0.academia-photos.com/108341404/27869020/26141239/s200_zayar.linn_naung.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.main-part .data-container .myday-wrapper-container .myday-wrapper.me .bg .plus-icon{
+    background-color: var(--default-blue-color);
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+    border-radius: 50%;
+    stroke: var(--white-color);
+    position: absolute;
+    bottom: -45px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.main-part .data-container .myday-wrapper-container .myday-wrapper.me span{
+    border-bottom-left-radius: var(--myday-border-radius);
+    border-bottom-right-radius: var(--myday-border-radius);
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 5px;
+    color: var(--white-color);
+    font-size: var(--default-font-size);
+}
+.main-part .data-container .myday-wrapper-container .myday-wrapper.default{
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+.main-part .data-container .myday-wrapper-container .myday-wrapper#one{
+    background-image: url("https://flxt.tmsimg.com/NowShowing/63045/63045_aa.jpg");
+}
+.main-part .data-container .myday-wrapper-container .myday-wrapper#two{
+    background-image: url("https://m.media-amazon.com/images/M/MV5BYzJjMTYyMjQtZDI0My00ZjE2LTkyNGYtOTllNGQxNDMyZjE0XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UY1200_CR113,0,630,1200_AL_.jpg");
+}
+.main-part .data-container .myday-wrapper-container .myday-wrapper#three{
+    background-image: url("https://images.pexels.com/photos/5007442/pexels-photo-5007442.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+}
+.main-part .data-container .myday-wrapper-container .myday-wrapper#four{
+    background-image: url("https://images-na.ssl-images-amazon.com/images/I/51NqbdDrbOL.png");
+}
+.main-part .data-container .myday-wrapper-container .myday-wrapper#five{
+    background-image: url("https://m.media-amazon.com/images/M/MV5BYzJjMTYyMjQtZDI0My00ZjE2LTkyNGYtOTllNGQxNDMyZjE0XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UY1200_CR113,0,630,1200_AL_.jpg");
+}
+.main-part .data-container .myday-wrapper-container .myday-wrapper.default .image-logo{
+    position: absolute;
+    left: 8px;
+    top: 10px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 5px solid var(--default-blue-color)
+}
+.main-part .data-container .myday-wrapper-container .myday-wrapper.default span{
+    position: absolute;
+    bottom: 5px;
+    left: 8px;
+    font-size: var(--default-font-size);
+    color: var(--white-color);
+}
+.main-part .post-uploader-container{
+    width: 90%;
+    padding: 15px 20px;
+    border-radius: var(--myday-border-radius);
+    background-color: var(--second-dark-color);
+}
+.main-part .post-uploader-container .upper{
+    display: flex;
+}
+.main-part .post-uploader-container .upper img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.main-part .post-uploader-container .upper input{
+    width: 100%;
+    border-radius: 45px;
+    background-color: var(--tertiary-dark-color);
+    outline: 0;
+    border: 0;
+    padding-left: 15px;
+    font-size: 16px;
+}
+.main-part .post-uploader-container hr{
+    margin: 10px 0;
+    border-color: var(--graywhite-color);
+}
+.main-part .post-uploader-container .lower{
+    display: flex;
+    justify-content: space-evenly;
+}
+.main-part .post-uploader-container .lower div{
+    display: flex;
+    align-items: center;
+}
+.main-part .post-uploader-container .lower div .video-icon{
+    color: var(--default-blue-color);
+    fill: var(--default-blue-color);
+    margin-right: 5px;
+}
+.main-part .post-uploader-container .lower div .image-icon{
+    color: var(--default-green-color);
+    margin-right: 5px;
+}
+.main-part .post-uploader-container .lower div .smile-icon{
+    color: var(--default-yellow-color);
+    margin-right: 5px;
+}
+.main-part .post-uploader-container .lower span{
+    font-size: var(--default-font-size);
+    color: var(--graywhite-color);
+}
+.main-part .post-data-container{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.main-part .post-data-container .post{
+    width: 90%;
+    padding: 15px 20px;
+    border-radius: var(--myday-border-radius);
+    background-color: var(--second-dark-color);
+    margin-bottom: 10px;
+}
+.main-part .post-data-container .post .post-header{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.main-part .post-data-container .post .post-header .post-uploader-profile{
+
+}
+.main-part .post-data-container .post .post-header .post-uploader-profile img{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+.main-part .post-data-container .post .post-header .detail{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.main-part .post-data-container .post .post-header .detail .upper{
+    font-size: var(--default-font-size);
+    font-weight: bold;
+    color: var(--white-color);
+}
+.main-part .post-data-container .post .post-header .detail .lower{
+    color: var(--graywhite-color);
+    font-size: var(--small-font-size);
+    display: flex;
+    align-items: center;
+}
+.main-part .post-data-container .post .post-header .detail .lower .globe-icon{
+    margin-left: 5px;
+    width: 15px;
+    height: 15px;
+}
+.main-part .post-data-container .post .post-header .three-dots-icon{
+    color: var(--graywhite-color);
+    font-size: 15px;
+    position: absolute;
+    right: 0;
+}
+.main-part .post-data-container .post .post-quality{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.main-part .post-data-container .post .post-quality .like{
+    display: flex;
+    align-items: center;
+}
+.main-part .post-data-container .post .post-quality .like .icon{
+    position: relative;
+    width: 35px;
+    display: flex;
+    align-items: center;
+}
+.main-part .post-data-container .post .post-quality .like .icon .like-icon{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    stroke: var(--default-blue-color);
+    fill: var(--default-blue-color);
+}
+.main-part .post-data-container .post .post-quality .like .icon .heart-icon{
+    width: 20px;
+    height: 20px;
+    stroke: var(--default-red-color);
+    fill: var(--default-red-color);
+    position: absolute;
+    left: 10px;
+}
+.main-part .post-data-container .post .post-quality .like span{
+    font-size: var(--default-font-size);
+    color: var(--palewhite-color);
+}
+.main-part .post-data-container .post .post-quality .share{
+    font-size: var(--default-font-size);
+    color: var(--graywhite-color);
+}
+.main-part .post-data-container .post .post-text{
+    font-size: var(--default-font-size);
+    color: var(--graywhite-color);
+    line-height: 23px;
+}
+.main-part .post-data-container .post .post-img{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.main-part .post-data-container .post .post-img img{
+    width: 100%;
+    max-height: 600px;
+}
+.main-part .post-data-container .post .post-like{
+    display: flex;
+    justify-content: space-evenly;
+}
+.main-part .post-data-container .post .post-like div{
+    display: flex;
+    align-items: center;
+}
+.main-part .post-data-container .post .post-like div .like-icon,
+.main-part .post-data-container .post .post-like div .message-icon,
+.main-part .post-data-container .post .post-like div .share-icon{
+    stroke: var(--graywhite-color);
+    width: 17px;
+    height: 17px;
+    margin-right: 5px;
+}
+.main-part .post-data-container .post .post-like div span{
+    color: var(--graywhite-color);
+    font-size: var(--small-font-size);
+}
+.main-part .post-data-container .post hr{
+    margin: 10px 0;
+    border-color: #3E4042;
+}
+.main-part .post-data-container .post .my-reaction{
+    display: flex;
+}
+.main-part .post-data-container .post .my-reaction img{
+    width: 35px;
+    border-radius: 50%;
+}
+.main-part .post-data-container .post .my-reaction div{
+    display: flex;
+    align-items: center;
+    background-color: var(--tertiary-dark-color);
+    padding: 0 20px;
+    border-radius: 20px;
+    margin-left: 5px;
+    width: 100%;
+}
+.main-part .post-data-container .post .my-reaction div input{
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    height: 100%;
+    font-size: 15px;
+    flex-grow: 3;
+    color: var(--white-color);
+}
+.main-part .post-data-container .post .my-reaction div .icon{
+    width: 20px;
+    stroke: var(--graywhite-color);
+    margin-left: 5px;
+}

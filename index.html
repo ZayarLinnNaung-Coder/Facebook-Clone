@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Facebook</title>
+    <link rel="icon" href="https://facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png?w=512&h=512">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/query.css">
+</head>
+<body>
+
+    <header>
+        <div class="left">
+            <img src="https://facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png?w=512&h=512" id="fb-logo" alt="">
+            <div class="form-wrapper">
+                <i data-feather="search" class="search-icon"></i>
+                <input type="text" placeholder="Search Facebook">
+            </div>
+        </div>
+        <div class="main">
+            <div class="link-container">
+                <div class="sub-link active">
+                    <i data-feather="home" class="link-icon"></i>
+                </div>
+
+                <div class="sub-link">
+                    <i data-feather="users" class="link-icon"></i>
+                    <span class="badge">4</span>
+                </div>
+
+                <div class="sub-link">
+                    <i data-feather="airplay" class="link-icon"></i>
+                </div>
+
+                <div class="sub-link">
+                    <i data-feather="user" class="link-icon"></i>
+                    <span class="badge">7</span>
+                </div>
+
+                <div class="sub-link">
+                    <i data-feather="columns" class="link-icon"></i>
+                </div>
+                <div class="sub-link menu-link" onclick="showLeft()">
+                    <i data-feather="menu" class="link-icon" id="menuLink"></i>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="link-container">
+                <div class="info">
+                    <img src="https://0.academia-photos.com/108341404/27869020/26141239/s200_zayar.linn_naung.jpg"
+                         alt="">
+                    <span>Zayar</span>
+                </div>
+                <div class="link plus">
+                    <i data-feather="plus" class="link-icon"></i>
+                </div>
+                <div class="link message">
+                    <i data-feather="message-circle" class="link-icon"></i>
+                </div>
+                <div class="link noti">
+                    <i data-feather="bell" class="link-icon"></i>
+                </div>
+                <div class="link setting">
+                    <i data-feather="chevron-down" class="link-icon"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="mobile-nav-upper">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Facebook-reversed.svg/1280px-Facebook-reversed.svg.png" alt="">
+        <div>
+            <i data-feather="search" class="logo"></i>
+            <i data-feather="message-circle" class="logo"></i>
+        </div>
+    </section>
+    <section class="mobile-nav">
+        <div class="tab active">
+            <i data-feather="home" class="icon"></i>
+        </div>
+        <div class="tab">
+            <i data-feather="user-check" class="icon"></i>
+        </div>
+        <div class="tab">
+            <i data-feather="users" class="icon"></i>
+        </div>
+        <div class="tab">
+            <i data-feather="video" class="icon"></i>
+        </div>
+        <div class="tab">
+            <i data-feather="bell" class="icon"></i>
+        </div>
+        <div class="tab">
+            <i data-feather="menu" class="icon"></i>
+        </div>
+    </section>
+    <div class="left-part" id="leftPart">
+        <div class="upper" id="upper">
+            <div>
+                <img src="https://0.academia-photos.com/108341404/27869020/26141239/s200_zayar.linn_naung.jpg" alt="">
+                <span>Zayar Linn Naung</span>
+            </div>
+            <div>
+                <img src="https://www.facebook.com/rsrc.php/v3/yx/r/5rR6LRpNc5u.png" alt="">
+                <span>Covid-19 Information Center</span>
+            </div>
+            <div>
+                <img src="https://www.facebook.com/rsrc.php/v3/y8/r/S0U5ECzYUSu.png" alt="">
+                <span>Friends</span>
+            </div>
+            <div>
+                <img src="https://www.facebook.com/rsrc.php/v3/y5/r/PrjLkDYpYbH.png" alt="">
+                <span>Groups</span>
+            </div>
+            <div>
+                <img src="https://www.facebook.com/rsrc.php/v3/y5/r/duk32h44Y31.png" alt="">
+                <span>Watch</span>
+            </div>
+            <div id="seeMoreDiv">
+                <i data-feather="chevron-down" class="more-icon"></i>
+                <span>See More</span>
+            </div>
+            <div>
+                <img src="https://www.facebook.com/rsrc.php/v3/yx/r/5rR6LRpNc5u.png" alt="">
+                <span>Covid-19 Information Center</span>
+            </div>
+            <div>
+                <img src="https://www.facebook.com/rsrc.php/v3/yx/r/5rR6LRpNc5u.png" alt="">
+                <span>Covid-19 Information Center</span>
+            </div>
+            <div>
+                <img src="https://www.facebook.com/rsrc.php/v3/yx/r/5rR6LRpNc5u.png" alt="">
+                <span>Covid-19 Information Center</span>
+            </div>
+            <div>
+                <img src="https://www.facebook.com/rsrc.php/v3/yx/r/5rR6LRpNc5u.png" alt="">
+                <span>Covid-19 Information Center</span>
+            </div>
+            <div>
+                <img src="https://www.facebook.com/rsrc.php/v3/yx/r/5rR6LRpNc5u.png" alt="">
+                <span>Covid-19 Information Center</span>
+            </div>
+            <div>
+                <img src="https://www.facebook.com/rsrc.php/v3/yx/r/5rR6LRpNc5u.png" alt="">
+                <span>Covid-19 Information Center</span>
+            </div>
+            <div>
+                <img src="https://www.facebook.com/rsrc.php/v3/yx/r/5rR6LRpNc5u.png" alt="">
+                <span>Covid-19 Information Center</span>
+            </div>
+            <div>
+                <img src="https://www.facebook.com/rsrc.php/v3/yx/r/5rR6LRpNc5u.png" alt="">
+                <span>Covid-19 Information Center</span>
+            </div>
+            <div id="seeLessDiv">
+                <i data-feather="chevron-up" class="less-icon"></i>
+                <span>See Less</span>
+            </div>
+        </div>
+        <hr>
+        <div class="lower">
+            <p class="ys">Your Shortcuts</p>
+            <div>
+                <img src="https://t4d.or.ke/wp-content/uploads/2019/12/Training-Course-in-Java-Programming-Masterclass-t4d.jpg" alt="">
+                <span>JavaSE Programming Training</span>
+            </div>
+            <div>
+                <img src="https://avatars.githubusercontent.com/u/2918581?s=200&v=4" alt="">
+                <span>Bootstrap Bootcamp</span>
+            </div>
+            <div>
+                <img src="https://d2gdtie5ivbdow.cloudfront.net/media/images/javascript.png" alt="">
+                <span>Javascript Basic to Advanced</span>
+            </div>
+            <div>
+                <img src="https://sdtimes.com/wp-content/uploads/2018/02/Angular_full_color_logo.svg_.png" alt="">
+                <span>Angular Development</span>
+            </div>
+            <div>
+                <img src="http://www.programmingscripts.com/wp-content/uploads/2016/01/jquery-icon.png" alt="">
+                <span>jQuery Training</span>
+            </div>
+        </div>
+    </div>
+    <div class="main-part">
+        <div class="data-container">
+            <i data-feather="arrow-right" class="next-myday"></i>
+            <div class="myday-wrapper-container">
+                <div class="myday-wrapper me">
+                    <div class="bg">
+                        <i data-feather="plus" class="plus-icon"></i>
+                    </div>
+                    <span>Create Story</span>
+                </div>
+                <div class="myday-wrapper default" id="one">
+                    <img src="https://0.academia-photos.com/108341404/27869020/26141239/s200_zayar.linn_naung.jpg" class="image-logo" alt="">
+                    <span>Your Story</span>
+                </div>
+                <div class="myday-wrapper default" id="two">
+                    <img src="https://img10.joybuy.com/N0/s560x560_jfs/t1/66750/11/14068/180428/5db7d57eEdf6f8f46/48c95045ea7d067f.jpg" class="image-logo" alt="">
+                    <span>May Myat Moe</span>
+                </div>
+                <div class="myday-wrapper default" id="three">
+                    <img src="https://fsb.zobj.net/crop.php?r=OQ-fe8MjO3udgVlMi89pG5sbZrFfLSKX5YMHHl5H4SLIbCcXtyNiBQ_CBGChosGQg24PCXT01qIHZPrJ3BVD8eVMZ7097MoX8G3VX3yksjQDQwVjMW2p5_ap_73jNnOq0dJI0djCoUIVZyGU" class="image-logo" alt="">
+                    <span>Oakar Min</span>
+                </div>
+                <div class="myday-wrapper default" id="four">
+                    <img src="https://wallpaperaccess.com/full/1642272.jpg" class="image-logo" alt="">
+                    <span>Htet Aung</span>
+                </div>
+                <div class="myday-wrapper default" id="five">
+                    <img src="https://wallpaperaccess.com/full/1642272.jpg" class="image-logo" alt="">
+                    <span>Htet Aung</span>
+                </div>
+                <div class="myday-wrapper default" id="six">
+                    <img src="https://wallpaperaccess.com/full/1642272.jpg" class="image-logo" alt="">
+                    <span>Htet Aung</span>
+                </div>
+            </div>
+            <div class="post-uploader-container">
+                <div class="upper">
+                    <img src="https://0.academia-photos.com/108341404/27869020/26141239/s200_zayar.linn_naung.jpg" alt="">
+                    <input type="text" placeholder="What's on your mind, Zayar?">
+                </div>
+                <hr>
+                <div class="lower">
+                    <div class="live-video">
+                        <i data-feather="video" class="video-icon"></i>
+                        <span>Live Video</span>
+                    </div>
+                    <div class="photo">
+                        <i data-feather="image" class="image-icon"></i>
+                        <span>Photo/Video</span>
+                    </div>
+                    <div class="feeling">
+                        <i data-feather="smile" class="smile-icon"></i>
+                        <span>Feeling/Activity</span>
+                    </div>
+                </div>
+            </div>
+            <div class="post-data-container">
+                <div class="post">
+                    <div class="post-header">
+                        <div class="post-uploader-profile">
+                            <img src="https://images.squarespace-cdn.com/content/v1/5cb60300d7819e33997e3956/1556824335013-8RNOI14EBENGBBEZY17I/ke17ZwdGBToddI8pDm48kGDpvalPb1SqHoCn1hwN0Y57gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmQPoRzxSr1hzN-vPBHt7YyLLXgctAyUJRqJUUGWVDK_ZzIgvsybGcZEPqUYiXY8im/Square.jpg" alt="">
+                        </div>
+                        <div class="detail">
+                            <div class="upper">
+                                <span>Kaung Myat Thu</span>
+                            </div>
+                            <div class="lower">
+                                <span>3h</span>
+                                <i data-feather="globe" class="globe-icon"></i>
+                            </div>
+                        </div>
+                        <span class="three-dots-icon"><i class="fas fa-ellipsis-h"></i></span>
+
+                    </div>
+                    <div class="post-text">
+                        <p>
+                            ခုထိ ဆရာဆိုတာ စာသင်ဖို့အဓိက ဆိုတဲ့
+                            ဘာမှမလေ့လာတဲ့ ဆရိန်းငပါ တွေ ဖတ်ကြပါ
+                            ပြီးရင် ကျွန်ပညာရေး ဆိုပြီး ကျောင်းမတက်ခဲ့ကြရင်
+                            အင်္ဂလိပ်ခေတိက ပညာတတ်ရှိခဲ့မှာမဟုတ်ဘူးဆိုတဲ့ ပေါင်ကြိမ်း များလည်း ဖတ်ကြပါ
+                        </p>
+                    </div>
+                    <div class="post-img">
+                        <img src="img/one.jpg" alt="">
+                    </div>
+                    <div class="post-quality">
+                        <div class="like">
+                            <div class="icon">
+                                <i data-feather="thumbs-up" class="like-icon"></i>
+                                <i data-feather="heart" class="heart-icon"></i>
+                            </div>
+                            <span>454</span>
+                        </div>
+                        <div class="share">
+                            <span>59 Comments</span>
+                            <span>55 Shares</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="post-like">
+                        <div class="like">
+                            <i data-feather="thumbs-up" class="like-icon"></i>
+                            <span>Like</span>
+                        </div>
+                        <div class="comment">
+                            <i data-feather="message-square" class="message-icon"></i>
+                            <span>Message</span>
+                        </div>
+                        <div class="like">
+                            <i data-feather="corner-up-right" class="share-icon"></i>
+                            <span>share</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="my-reaction">
+                        <img src="https://0.academia-photos.com/108341404/27869020/26141239/s200_zayar.linn_naung.jpg" alt="">
+                        <div>
+                            <input type="text" placeholder="Write a comment...">
+                            <i data-feather="smile" class="icon"></i>
+                            <i data-feather="camera" class="icon"></i>
+                            <i data-feather="minus-square" class="icon"></i>
+                            <i data-feather="layout" class="icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-header">
+                        <div class="post-uploader-profile">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c6/Sierpinski_square.jpg" alt="">
+                        </div>
+                        <div class="detail">
+                            <div class="upper">
+                                <span>အလင်းရောင်</span>
+                            </div>
+                            <div class="lower">
+                                <span>3h</span>
+                                <i data-feather="globe" class="globe-icon"></i>
+                            </div>
+                        </div>
+                        <span class="three-dots-icon"><i class="fas fa-ellipsis-h"></i></span>
+
+                    </div>
+                    <div class="post-text">
+                        <p>
+                           Lorem ipsum dolor sit amet, conse
+                            <br>ctetur adipisicing elit. Accusamus accusantium amet commodi ex fugiat fugit hic impedit inventore, iusto laborum nam natus nobis omnis, pariatur placeat provident quia, tenetur voluptate!
+                        </p>
+                    </div>
+                    <div class="post-img">
+                        <img src="https://i.pinimg.com/originals/d3/5c/47/d35c47a0ca7f357a3066037af7750df1.png" alt="">
+                    </div>
+                    <div class="post-quality">
+                        <div class="like">
+                            <div class="icon">
+                                <i data-feather="thumbs-up" class="like-icon"></i>
+                                <i data-feather="heart" class="heart-icon"></i>
+                            </div>
+                            <span>8k</span>
+                        </div>
+                        <div class="share">
+                            <span>1k Comments</span>
+                            <span>550 Shares</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="post-like">
+                        <div class="like">
+                            <i data-feather="thumbs-up" class="like-icon"></i>
+                            <span>Like</span>
+                        </div>
+                        <div class="comment">
+                            <i data-feather="message-square" class="message-icon"></i>
+                            <span>Message</span>
+                        </div>
+                        <div class="like">
+                            <i data-feather="corner-up-right" class="share-icon"></i>
+                            <span>share</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="my-reaction">
+                        <img src="https://0.academia-photos.com/108341404/27869020/26141239/s200_zayar.linn_naung.jpg" alt="">
+                        <div>
+                            <input type="text" placeholder="Write a comment...">
+                            <i data-feather="smile" class="icon"></i>
+                            <i data-feather="camera" class="icon"></i>
+                            <i data-feather="minus-square" class="icon"></i>
+                            <i data-feather="layout" class="icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-header">
+                        <div class="post-uploader-profile">
+                            <img src="https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/03/convert-png-to-jpg-11.jpg" alt="">
+                        </div>
+                        <div class="detail">
+                            <div class="upper">
+                                <span>Khun Cho Kha</span>
+                            </div>
+                            <div class="lower">
+                                <span>3h</span>
+                                <i data-feather="globe" class="globe-icon"></i>
+                            </div>
+                        </div>
+                        <span class="three-dots-icon"><i class="fas fa-ellipsis-h"></i></span>
+
+                    </div>
+                    <div class="post-text">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti distinctio dolorum, expedita facere quas quo quod voluptas. Deserunt error est <br>libero natus nesciunt nisi, officiis pariatur possimus qui saepe vero?
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid amet, consectetur delectus et facilis laudantium, nihil omnis, quo quos sequi sint velit? Cupiditate distinctio hic minima perspiciatis quisquam temporibus?
+                        </p>
+                    </div>
+                    <div class="post-img">
+                        <img src="https://i.pinimg.com/474x/95/fe/8a/95fe8aedcca68abb306541f2e7af6237.jpg" alt="">
+                    </div>
+                    <div class="post-quality">
+                        <div class="like">
+                            <div class="icon">
+                                <i data-feather="thumbs-up" class="like-icon"></i>
+                                <i data-feather="heart" class="heart-icon"></i>
+                            </div>
+                            <span>454</span>
+                        </div>
+                        <div class="share">
+                            <span>59 Comments</span>
+                            <span>55 Shares</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="post-like">
+                        <div class="like">
+                            <i data-feather="thumbs-up" class="like-icon"></i>
+                            <span>Like</span>
+                        </div>
+                        <div class="comment">
+                            <i data-feather="message-square" class="message-icon"></i>
+                            <span>Message</span>
+                        </div>
+                        <div class="like">
+                            <i data-feather="corner-up-right" class="share-icon"></i>
+                            <span>share</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="my-reaction">
+                        <img src="https://0.academia-photos.com/108341404/27869020/26141239/s200_zayar.linn_naung.jpg" alt="">
+                        <div>
+                            <input type="text" placeholder="Write a comment...">
+                            <i data-feather="smile" class="icon"></i>
+                            <i data-feather="camera" class="icon"></i>
+                            <i data-feather="minus-square" class="icon"></i>
+                            <i data-feather="layout" class="icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-header">
+                        <div class="post-uploader-profile">
+                            <img src="https://i.pinimg.com/originals/8c/ca/38/8cca38d3dc4f7e66cb6b1822f39a1449.jpg" alt="">
+                        </div>
+                        <div class="detail">
+                            <div class="upper">
+                                <span>May Myat Moe</span>
+                            </div>
+                            <div class="lower">
+                                <span>3h</span>
+                                <i data-feather="globe" class="globe-icon"></i>
+                            </div>
+                        </div>
+                        <span class="three-dots-icon"><i class="fas fa-ellipsis-h"></i></span>
+
+                    </div>
+                    <div class="post-text">
+                        <p>
+                            Love you Totoyo !
+                        </p>
+                    </div>
+                    <div class="post-img">
+                        <img src="https://c4.wallpaperflare.com/wallpaper/722/109/95/totoro-my-neighbor-totoro-anime-wallpaper-preview.jpg" alt="">
+                    </div>
+                    <div class="post-quality">
+                        <div class="like">
+                            <div class="icon">
+                                <i data-feather="thumbs-up" class="like-icon"></i>
+                                <i data-feather="heart" class="heart-icon"></i>
+                            </div>
+                            <span>454</span>
+                        </div>
+                        <div class="share">
+                            <span>59 Comments</span>
+                            <span>55 Shares</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="post-like">
+                        <div class="like">
+                            <i data-feather="thumbs-up" class="like-icon"></i>
+                            <span>Like</span>
+                        </div>
+                        <div class="comment">
+                            <i data-feather="message-square" class="message-icon"></i>
+                            <span>Message</span>
+                        </div>
+                        <div class="like">
+                            <i data-feather="corner-up-right" class="share-icon"></i>
+                            <span>share</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="my-reaction">
+                        <img src="https://0.academia-photos.com/108341404/27869020/26141239/s200_zayar.linn_naung.jpg" alt="">
+                        <div>
+                            <input type="text" placeholder="Write a comment...">
+                            <i data-feather="smile" class="icon"></i>
+                            <i data-feather="camera" class="icon"></i>
+                            <i data-feather="minus-square" class="icon"></i>
+                            <i data-feather="layout" class="icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-header">
+                        <div class="post-uploader-profile">
+                            <img src="https://images.squarespace-cdn.com/content/v1/5cb60300d7819e33997e3956/1556824335013-8RNOI14EBENGBBEZY17I/ke17ZwdGBToddI8pDm48kGDpvalPb1SqHoCn1hwN0Y57gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmQPoRzxSr1hzN-vPBHt7YyLLXgctAyUJRqJUUGWVDK_ZzIgvsybGcZEPqUYiXY8im/Square.jpg" alt="">
+                        </div>
+                        <div class="detail">
+                            <div class="upper">
+                                <span>Kaung Myat Thu</span>
+                            </div>
+                            <div class="lower">
+                                <span>3h</span>
+                                <i data-feather="globe" class="globe-icon"></i>
+                            </div>
+                        </div>
+                        <span class="three-dots-icon"><i class="fas fa-ellipsis-h"></i></span>
+
+                    </div>
+                    <div class="post-text">
+                        <p>
+                            ခုထိ ဆရာဆိုတာ စာသင်ဖို့အဓိက ဆိုတဲ့
+                            ဘာမှမလေ့လာတဲ့ ဆရိန်းငပါ တွေ ဖတ်ကြပါ
+                            ပြီးရင် ကျွန်ပညာရေး ဆိုပြီး ကျောင်းမတက်ခဲ့ကြရင်
+                            အင်္ဂလိပ်ခေတိက ပညာတတ်ရှိခဲ့မှာမဟုတ်ဘူးဆိုတဲ့ ပေါင်ကြိမ်း များလည်း ဖတ်ကြပါ
+                        </p>
+                    </div>
+                    <div class="post-img">
+                        <img src="img/one.jpg" alt="">
+                    </div>
+                    <div class="post-quality">
+                        <div class="like">
+                            <div class="icon">
+                                <i data-feather="thumbs-up" class="like-icon"></i>
+                                <i data-feather="heart" class="heart-icon"></i>
+                            </div>
+                            <span>454</span>
+                        </div>
+                        <div class="share">
+                            <span>59 Comments</span>
+                            <span>55 Shares</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="post-like">
+                        <div class="like">
+                            <i data-feather="thumbs-up" class="like-icon"></i>
+                            <span>Like</span>
+                        </div>
+                        <div class="comment">
+                            <i data-feather="message-square" class="message-icon"></i>
+                            <span>Message</span>
+                        </div>
+                        <div class="like">
+                            <i data-feather="corner-up-right" class="share-icon"></i>
+                            <span>share</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="my-reaction">
+                        <img src="https://0.academia-photos.com/108341404/27869020/26141239/s200_zayar.linn_naung.jpg" alt="">
+                        <div>
+                            <input type="text" placeholder="Write a comment...">
+                            <i data-feather="smile" class="icon"></i>
+                            <i data-feather="camera" class="icon"></i>
+                            <i data-feather="minus-square" class="icon"></i>
+                            <i data-feather="layout" class="icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-header">
+                        <div class="post-uploader-profile">
+                            <img src="https://images-na.ssl-images-amazon.com/images/I/717oWMpBttL.jpg" alt="">
+                        </div>
+                        <div class="detail">
+                            <div class="upper">
+                                <span>Pikajuu</span>
+                            </div>
+                            <div class="lower">
+                                <span>3h</span>
+                                <i data-feather="globe" class="globe-icon"></i>
+                            </div>
+                        </div>
+                        <span class="three-dots-icon"><i class="fas fa-ellipsis-h"></i></span>
+
+                    </div>
+                    <div class="post-text">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo fuga laudantium, minima recusandae rerum tempora! Aspernatur dolorem eos est fugiat, sint veniam voluptatum! Aperiam consequatur, cum eum facilis illum repudiandae?
+                        </p>
+                    </div>
+                    <div class="post-img">
+                        <img src="https://wallpaperset.com/w/full/f/4/6/282989.jpg" alt="">
+                    </div>
+                    <div class="post-quality">
+                        <div class="like">
+                            <div class="icon">
+                                <i data-feather="thumbs-up" class="like-icon"></i>
+                                <i data-feather="heart" class="heart-icon"></i>
+                            </div>
+                            <span>454</span>
+                        </div>
+                        <div class="share">
+                            <span>59 Comments</span>
+                            <span>55 Shares</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="post-like">
+                        <div class="like">
+                            <i data-feather="thumbs-up" class="like-icon"></i>
+                            <span>Like</span>
+                        </div>
+                        <div class="comment">
+                            <i data-feather="message-square" class="message-icon"></i>
+                            <span>Message</span>
+                        </div>
+                        <div class="like">
+                            <i data-feather="corner-up-right" class="share-icon"></i>
+                            <span>share</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="my-reaction">
+                        <img src="https://0.academia-photos.com/108341404/27869020/26141239/s200_zayar.linn_naung.jpg" alt="">
+                        <div>
+                            <input type="text" placeholder="Write a comment...">
+                            <i data-feather="smile" class="icon"></i>
+                            <i data-feather="camera" class="icon"></i>
+                            <i data-feather="minus-square" class="icon"></i>
+                            <i data-feather="layout" class="icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-header">
+                        <div class="post-uploader-profile">
+                            <img src="https://static.wikia.nocookie.net/naruto/images/c/cb/%C5%8Ctsutsuki_Symbol.svg/revision/latest/scale-to-width-down/300?cb=20180407042123" alt="">
+                        </div>
+                        <div class="detail">
+                            <div class="upper">
+                                <span>Ishiki Otatsuki</span>
+                            </div>
+                            <div class="lower">
+                                <span>3min</span>
+                                <i data-feather="globe" class="globe-icon"></i>
+                            </div>
+                        </div>
+                        <span class="three-dots-icon"><i class="fas fa-ellipsis-h"></i></span>
+
+                    </div>
+                    <div class="post-text">
+                        <p>
+                            I am here to destroy shinobi life ...
+                        </p>
+                    </div>
+                    <div class="post-img">
+                        <img src="https://static2.cbrimages.com/wordpress/wp-content/uploads/2020/07/Isshiki-Otsutsuki-Boruto.jpg" alt="">
+                    </div>
+                    <div class="post-quality">
+                        <div class="like">
+                            <div class="icon">
+                                <i data-feather="thumbs-up" class="like-icon"></i>
+                                <i data-feather="heart" class="heart-icon"></i>
+                            </div>
+                            <span>454</span>
+                        </div>
+                        <div class="share">
+                            <span>59 Comments</span>
+                            <span>55 Shares</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="post-like">
+                        <div class="like">
+                            <i data-feather="thumbs-up" class="like-icon"></i>
+                            <span>Like</span>
+                        </div>
+                        <div class="comment">
+                            <i data-feather="message-square" class="message-icon"></i>
+                            <span>Message</span>
+                        </div>
+                        <div class="like">
+                            <i data-feather="corner-up-right" class="share-icon"></i>
+                            <span>share</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="my-reaction">
+                        <img src="https://0.academia-photos.com/108341404/27869020/26141239/s200_zayar.linn_naung.jpg" alt="">
+                        <div>
+                            <input type="text" placeholder="Write a comment...">
+                            <i data-feather="smile" class="icon"></i>
+                            <i data-feather="camera" class="icon"></i>
+                            <i data-feather="minus-square" class="icon"></i>
+                            <i data-feather="layout" class="icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="right-part">
+        <div class="pages">
+            <p>Your Pages</p>
+            <div>
+                <img src="https://scontent-frt3-1.xx.fbcdn.net/v/t1.6435-9/85136648_194263778617976_1313075784193146880_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=C_xuVHhWDgsAX8nbOBL&_nc_ht=scontent-frt3-1.xx&oh=a5e825ce903d43e6d5f659129be9c291&oe=60D3009F" alt="">
+                <span>Gray Tech Field Family</span>
+            </div>
+        </div>
+        <hr>
+        <div class="contact">
+            <p>Contacts</p>
+            <div>
+                <img src="https://i.pinimg.com/originals/54/0a/d2/540ad2b9ae49a2d7e8e9ce6ba416ac2c.png" alt="">
+                <span>May Myat Moe</span>
+            </div>
+            <div>
+                <img src="https://i.pinimg.com/originals/2a/92/06/2a9206a4a0d1d23cf92636c42115d054.jpg" alt="">
+                <span>Naruto</span>
+            </div>
+            <div>
+                <img src="https://wallpaperaccess.com/full/2499876.jpg" alt="">
+                <span>Sasuke</span>
+            </div>
+            <div>
+                <img src="https://static.wikia.nocookie.net/theeverythingeverything/images/7/7e/Hashirama_Senju.png/revision/latest?cb=20121117000024" alt="">
+                <span>Hashirama</span>
+            </div>
+            <div>
+                <img src="https://pbs.twimg.com/profile_images/1218242897650372608/26S52EZo_400x400.jpg" alt="">
+                <span>Madara</span>
+            </div>
+            <div>
+                <img src="https://static.wikia.nocookie.net/naruto-ultimate-fannonfanfiction/images/e/e8/Hamura.png/revision/latest?cb=20171214224415" alt="">
+                <span>Hamura</span>
+            </div>
+            <div>
+                <img src="https://cdn.myanimelist.net/r/360x360/images/characters/11/76260.jpg?s=42599cd9093443a03b8040f23871848d" alt="">
+                <span>Zetsu</span>
+            </div>
+            <div>
+                <img src="https://static.wikia.nocookie.net/naruto/images/9/97/Rock_Lee_Part_I.png/revision/latest?cb=20181229065526" alt="">
+                <span>Rock Lee</span>
+            </div>
+            <div>
+                <img src="https://pbs.twimg.com/profile_images/1052331239213068293/kd8lpDOR.jpg" alt="">
+                <span>Gara</span>
+            </div>
+            <div>
+                <img src="https://i.pinimg.com/originals/2a/92/06/2a9206a4a0d1d23cf92636c42115d054.jpg" alt="">
+                <span>Naruto</span>
+            </div>
+            <div>
+                <img src="https://wallpaperaccess.com/full/2499876.jpg" alt="">
+                <span>Sasuke</span>
+            </div>
+            <div>
+                <img src="https://static.wikia.nocookie.net/theeverythingeverything/images/7/7e/Hashirama_Senju.png/revision/latest?cb=20121117000024" alt="">
+                <span>Hashirama</span>
+            </div>
+            <div>
+                <img src="https://pbs.twimg.com/profile_images/1218242897650372608/26S52EZo_400x400.jpg" alt="">
+                <span>Madara</span>
+            </div>
+            <div>
+                <img src="https://static.wikia.nocookie.net/naruto-ultimate-fannonfanfiction/images/e/e8/Hamura.png/revision/latest?cb=20171214224415" alt="">
+                <span>Hamura</span>
+            </div>
+            <div>
+                <img src="https://cdn.myanimelist.net/r/360x360/images/characters/11/76260.jpg?s=42599cd9093443a03b8040f23871848d" alt="">
+                <span>Zetsu</span>
+            </div>
+            <div>
+                <img src="https://static.wikia.nocookie.net/naruto/images/9/97/Rock_Lee_Part_I.png/revision/latest?cb=20181229065526" alt="">
+                <span>Rock Lee</span>
+            </div>
+            <div>
+                <img src="https://pbs.twimg.com/profile_images/1052331239213068293/kd8lpDOR.jpg" alt="">
+                <span>Gara</span>
+            </div>
+        </div>
+        <hr>
+        <div class="group">
+            <p>Group Conversations</p>
+            <div>
+                <img src="https://images-na.ssl-images-amazon.com/images/I/31Sz4oZG6nL._AC_SY355_.jpg" alt="">
+                <span>Atatsuki Members</span>
+            </div>
+            <div>
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/32b8f7d9-0d6c-4e2f-b737-eea02c841b00/dc91e8w-1581c8a1-6586-44ed-be56-c45e7ad94097.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvMzJiOGY3ZDktMGQ2Yy00ZTJmLWI3MzctZWVhMDJjODQxYjAwXC9kYzkxZTh3LTE1ODFjOGExLTY1ODYtNDRlZC1iZTU2LWM0NWU3YWQ5NDA5Ny5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.eMqDW6-zJXjEpJgHJ_G9tvyPhIt89b5j5QnthNvmn60" alt="">
+                <span>Otsutsuki Members</span>
+            </div>
+            <div>
+                <img src="https://wallpapercave.com/wp/wp3200067.jpg" alt="">
+                <span>Taka Members</span>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        feather.replace();
+    </script>
+    <script src="leftSide.js"></script>
+</body>
+</html>

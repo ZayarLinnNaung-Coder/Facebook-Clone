@@ -1,0 +1,54 @@
+.right-part{
+    width: 25%;
+    height: 92vh;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    padding: 15px;
+    overflow-y: auto;
+}
+.right-part::-webkit-scrollbar{
+    width: 10px;
+}
+/* Track */
+.right-part::-webkit-scrollbar-track {
+    /*background: #f1f1f1;*/
+}
+/* Handle */
+.right-part::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #5E5E5F;
+}
+/* Handle on hover */
+.right-part::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+.right-part hr{
+    border: 1px solid var(--graywhite-color);
+    margin-bottom: 5px;
+}
+.right-part .pages p, .right-part .contact p, .right-part .group p{
+    color: var(--graywhite-color);
+    font-size: var(--default-font-size);
+    margin-bottom: 5px;
+}
+.right-part .pages div, .right-part .contact div, .right-part .group div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.right-part .pages div:hover, .right-part .contact div:hover, .right-part .group div:hover{
+    background-color: var(--second-dark-color);
+}
+.right-part .pages div img, .right-part .contact div img, .right-part .group div img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.right-part .pages div span, .right-part .contact div span, .right-part .group div span{
+    font-size: var(--default-font-size);
+    color: var(--white-color);
+    margin-left: 5px;
+}
